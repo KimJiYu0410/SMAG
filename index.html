@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>training_09_SMAG</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="inner">
+            <h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="183.205" height="35" viewBox="0 0 183.205 35">
+                    <g id="그룹_4431" data-name="그룹 4431" transform="translate(-708 -550)">
+                        <path id="패스_1" data-name="패스 1"
+                            d="M51.44,9.169C51.055,7.631,50.479,5.9,46.826,5.9S42.6,7.246,42.6,8.4c0,4.038,16.34,1.154,16.34,10.577,0,7.5-7.3,8.846-11.342,8.846-5.959,0-12.3-1.923-12.5-8.846h7.113c0,2.115,1.346,3.654,5.575,3.654,3.46,0,4.421-1.731,4.421-2.692,0-4.231-16.148-.962-16.148-10.577C36.061,5.708,38.368.9,46.634.9c5,0,11.15,1.154,11.726,8.462H51.44Z"
+                            transform="translate(739.42 549.677)" fill-rule="evenodd" style="fill: rgb(0, 0, 0);">
+                        </path>
+                        <path id="패스_2" data-name="패스 2"
+                            d="M85.2,26.954h-6.92V11.569c0-3.846-1.73-5-3.652-5-3.46,0-4.614,2.115-4.614,5.192V26.954H63.286V11.569c0-2.115,0-5.192-4.037-5.192-3.268,0-4.229,2.115-4.229,5V26.954H48.1V1.569h6.536V5.223h.192A7.675,7.675,0,0,1,62.133.8c3.845,0,5.383,1.346,7.3,4.038C70.4,3.685,72.129.8,76.358.8c5,0,9.035,2.885,9.035,8.462V26.954Z"
+                            transform="translate(751.41 549.584)" fill-rule="evenodd" style="fill: rgb(0, 0, 0);">
+                        </path>
+                        <path id="패스_3" data-name="패스 3"
+                            d="M92.921,19.554c-1.73,6.154-6.92,8.077-11.342,8.077-7.3,0-12.88-3.462-12.88-13.846C68.7,10.708,69.853.9,81.2.9c5.19,0,12.3,2.308,12.3,14.038v1.154H75.62c.192,1.923.577,6.154,6.151,6.154a4.5,4.5,0,0,0,4.421-2.692Zm-6.728-7.885C85.809,7.631,83.118,6.285,81,6.285c-3.268,0-5,1.923-5.383,5.385Z"
+                            transform="translate(770.41 549.677)" fill-rule="evenodd" style="fill: rgb(0, 0, 0);">
+                        </path>
+                        <path id="패스_4" data-name="패스 4"
+                            d="M107.79.985V24.254c0,4.231-.384,11.346-13.072,11.346-5.383,0-10.957-2.115-11.342-7.308h7.5c.384,1.154.769,2.5,4.806,2.5,3.652,0,5.383-1.731,5.383-5.577V22.331h-.192c-1.153,1.923-2.883,3.654-6.92,3.654-6.344,0-11.15-4.038-11.15-12.692C82.8,4.831,87.8.6,93.565.6a8.275,8.275,0,0,1,7.689,4.231h.192V.985ZM95.1,20.023c4.614,0,5.767-3.654,5.767-7.115,0-4.038-2.115-7.115-5.767-7.115-2.5,0-5.383,1.731-5.383,7.5,0,3.077,1.346,6.731,5.383,6.731"
+                            transform="translate(783.415 549.4)" fill-rule="evenodd" style="fill: rgb(0, 0, 0);"></path>
+                        <path id="패스_5" data-name="패스 5"
+                            d="M17.035,18.462a8.206,8.206,0,0,1-8.266,8.269A8.206,8.206,0,0,1,.5,18.462,8.249,8.249,0,0,1,8.769,10a8.5,8.5,0,0,1,8.266,8.462"
+                            transform="translate(707.504 558.077)" fill-rule="evenodd" style="fill: rgb(0, 0, 0);">
+                        </path>
+                        <path id="패스_6" data-name="패스 6"
+                            d="M25.632,18.462a8.266,8.266,0,1,1-16.532,0A8.371,8.371,0,0,1,17.366,10a8.371,8.371,0,0,1,8.266,8.462"
+                            transform="translate(715.439 558.077)" fill-rule="evenodd" style="fill: rgb(0, 0, 0);">
+                        </path>
+                        <path id="패스_7" data-name="패스 7"
+                            d="M34.332,18.373A8.266,8.266,0,1,1,26.066,10.1a8.089,8.089,0,0,1,8.266,8.269"
+                            transform="translate(723.463 558.166)" fill-rule="evenodd" style="fill: rgb(0, 0, 0);">
+                        </path>
+                        <path id="패스_8" data-name="패스 8"
+                            d="M25.632,9.669a8.266,8.266,0,1,1-16.532,0,8.266,8.266,0,1,1,16.532,0"
+                            transform="translate(715.439 550.139)" fill-rule="evenodd" style="fill: rgb(0, 0, 0);">
+                        </path>
+                        <path id="패스_9" data-name="패스 9"
+                            d="M34.332,9.669a8.266,8.266,0,1,1-16.532,0,8.266,8.266,0,1,1,16.532,0"
+                            transform="translate(723.463 550.139)" fill-rule="evenodd" style="fill: rgb(0, 0, 0);">
+                        </path>
+                        <path id="패스_10" data-name="패스 10"
+                            d="M43.032,9.669a8.266,8.266,0,1,1-16.532,0A8.206,8.206,0,0,1,34.766,1.4a8.329,8.329,0,0,1,8.266,8.269"
+                            transform="translate(731.488 550.139)" fill-rule="evenodd" style="fill: rgb(0, 0, 0);">
+                        </path>
+                    </g>
+                </svg>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="">PRODUCT</a>
+                        <ul>
+                            <li><a href="">50's Style</a></li>
+                            <li><a href="">Victoria</a></li>
+                            <li><a href="">Dolce Stil Novo</a></li>
+                            <li><a href="">SMEG X FIAT</a></li>
+                            <li><a href="">SMEG X D&G</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">COLLECTION</a>
+                        <ul>
+                            <li><a href="">50's Style</a></li>
+                            <li><a href="">Victoria</a></li>
+                            <li><a href="">Dolce Stil Novo</a></li>
+                            <li><a href="">Classic</a></li>
+                            <li><a href="">Linea</a></li>
+                            <li><a href="">SMEG X FIAT</a></li>
+                            <li><a href="">SMEG X D&G</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">MEGAZINE</a>
+                        <ul>
+                            <li><a href="">Classic</a></li>
+                            <li><a href="">Linea</a></li>
+                            <li><a href="">SMEG X FIAT</a></li>
+                            <li><a href="">SMEG X D&G</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Gallery</a>
+                        <ul>
+                            <li><a href="">Product</a></li>
+                            <li><a href="">SMEG X Veuve Clicquot</a></li>
+                            <li><a href="">SMEG x D&G</a></li>
+                            <li><a href="">SMEG x FIAT</a></li>
+                            <li><a href="">Classic</a></li>
+                            <li><a href="">Linea</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Service Center</a>
+                        <ul>
+                            <li><a href="">Classic</a></li>
+                            <li><a href="">Linea</a></li>
+                            <li><a href="">SMEG X FIAT</a></li>
+                            <li><a href="">SMEG X D&G</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">My Smeg</a>
+                        <ul>
+                            <li><a href="">Classic</a></li>
+                            <li><a href="">Linea</a></li>
+                            <li><a href="">SMEG X FIAT</a></li>
+                            <li><a href="">SMEG X D&G</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="img_box">
+                <figure>
+                    <img src="./images/header_image02.png" alt="">
+                </figure>
+                <figure>
+                    <img src="./images/header_image01.png" alt="">
+                </figure>
+            </div>
+            <div class="utils">
+                <a href="">
+                    <img src="./images/user.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./images/search.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <section class="main_visual">
+            <h2 class="blind">메인 비주얼</h2>
+            <div class="main_visual_slide">
+
+                <div class="itm itm00">
+                    <div class="txt">
+                        <!-- <strong>SMEG BALANCED BLENDING™이 만드는<br>
+                            고성능과 안전성의 완벽한 균형, 블렌딩 퀄리티의 차이.</strong>
+                        <p>진공 고속 블렌더</p> -->
+                    </div>
+                    <video class="bgvid" id="vid0" autoplay="" loop="" muted="" playsinline="">
+                        <source src="https://www.smegkorea.com/upload/main_promotion/2025022812052875242.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+                <div class="itm itm01">
+                    <div class="txt">
+                        <strong>고성능과 안전성의 완벽한 균형, 블렌딩 퀄리티의 차이</strong>
+                        <p>진공 고속 블렌더</p>
+                    </div>
+                </div>
+                <div class="itm itm02">
+                    <div class="txt">
+                        <strong>기술에 디자인을 더하면 어둠이 빛이 됩니다.</strong>
+                        <p>Dolce Stil Novo</p>
+                    </div>
+                </div>
+                <div class="itm itm03">
+                    <div class="txt">
+                        <strong>둥근 형태, 밝은 색상, 애호가들을 매혹시킵니다.</strong>
+                        <p>50's Retro Style</p>
+                    </div>
+                </div>
+                <div class="itm itm04">
+                    <div class="txt">
+
+                        <strong>Love for Tradition and for Details</strong>
+                        <p>Victoria</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="itm itm05">
+                    <div class="txt">
+                        <strong></strong>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="itm itm06">
+                    <div class="txt">
+                        <strong></strong>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="itm itm07">
+                    <div class="txt">
+                        <strong></strong>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="itm itm08">
+                    <div class="txt">
+                        <strong></strong>
+                        <p></p>
+                    </div>
+                </div>
+                 <div class="itm itm09">
+                    <div class="txt">
+                        <strong></strong>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="itm itm010">
+                    <div class="txt">
+                        <strong></strong>
+                        <p></p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="arrows">
+                <button class="prev">
+                    <img src="./images/arrow-left.svg" alt=""> prev
+                </button>
+                <button class="next">
+                    next <img src="./images/arrow-right.svg" alt="">
+                </button>
+            </div>
+            <span class="wheel">scroll</span>
+        </section>
+
+        <section class="main_best default">
+            <div class="title">
+                <h2>Inspired by architect Guido Canali, 스메그</h2>
+                <p>다양하고 견고한 스메그의 스페셜 에디션을 만나보세요.</p>
+            </div>
+            <div class="slide_wrap">
+                <div class="swiper main_best_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide itm">
+                            <figure>
+                                <img src="./images/main_best015.png" alt="">
+                            </figure>
+                            <p>Reliable Safety</p>
+                        </div>
+                        <div class="swiper-slide itm">
+                            <figure>
+                                <img src="./images/main_best016.png" alt="">
+                            </figure>
+                            <p>Comfortable Rest</p>
+                        </div>
+                        <div class="swiper-slide itm">
+                            <figure>
+                                <img src="./images/main_best017.png" alt="">
+                            </figure>
+                            <p>Enhanced Convenience</p>
+                        </div>
+                        <div class="swiper-slide itm">
+                            <figure>
+                                <img src="./images/main_best018.png" alt="">
+                            </figure>
+                            <p>Refined Design</p>
+                        </div>
+                        <div class="swiper-slide itm">
+                            <figure>
+                                <img src="./images/main_best019.png" alt="">
+                            </figure>
+                            <p>eliable Safety</p>
+                        </div>
+                        <div class="swiper-slide itm">
+                            <figure>
+                                <img src="./images/main_best020.png" alt="">
+                            </figure>
+                            <p>Comfortable Rest</p>
+                        </div>
+                        <div class="swiper-slide itm">
+                            <figure>
+                                <img src="./images/main_best0211.png" alt="">
+                            </figure>
+                            <p>Enhanced Convenience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_banner default">
+            <div class="title">
+                <h2>THESMAG ClASSIC</h2>
+            </div>
+        </section>
+        <section class="main_product default">
+            <div class="title">
+                <h2>Inside SMEG</h2>
+                <p>다양하고 견고한 스메그의 스페셜 에디션을 만나보세요.</p>
+            </div>
+            <div class="inner">
+                <div class="main_product_slide">
+                    <div class="itm">
+                        <div class="img_box">
+                            <img src="./images/main_best011.png" alt="">
+                        </div>
+                        <strong>더 안전하게</strong>
+                        <p class="desc">멀티 프로 오븐 : 열선의 차이가 곧 베이킹의 차이.</p>
+                    </div>
+                    <div class="itm">
+                        <div class="img_box">
+                            <img src="./images/main_best012.png" alt="">
+                        </div>
+                        <strong>더 편리하게</strong>
+                        <p class="desc">멀티 프로 오븐 : 열선의 차이가 곧 베이킹의 차이.</p>
+                    </div>
+                    <div class="itm">
+                        <div class="img_box">
+                            <img src="./images/main_best013.png" alt="">
+                        </div>
+                        <strong>더 건강하게</strong>
+                        <p class="desc">멀티 프로 오븐 : 열선의 차이가 곧 베이킹의 차이.</p>
+                    </div>
+                    <div class="itm">
+                        <div class="img_box">
+                            <img src="./images/main_best014.png" alt="">
+                        </div>
+                        <strong>더 세련되게</strong>
+                        <p class="desc">멀티 프로 오븐 : 열선의 차이가 곧 베이킹의 차이.</p>
+                    </div>
+                    <div class="itm">
+                        <div class="img_box">
+                            <img src="./images/main_best011.png" alt="">
+                        </div>
+                        <strong>더 안전하게</strong>
+                        <p class="desc">멀티 프로 오븐 : 열선의 차이가 곧 베이킹의 차이.</p>
+                    </div>
+                    <div class="itm">
+                        <div class="img_box">
+                            <img src="./images/main_best012.png" alt="">
+                        </div>
+                        <strong>더 편리하게</strong>
+                        <p class="desc">멀티 프로 오븐 : 열선의 차이가 곧 베이킹의 차이.</p>
+                    </div>
+                    <div class="itm">
+                        <div class="img_box">
+                            <img src="./images/main_best013.png" alt="">
+                        </div>
+                        <strong>더 건강하게</strong>
+                        <p class="desc">멀티 프로 오븐 : 열선의 차이가 곧 베이킹의 차이.</p>
+                    </div> /
+                    <div class="itm">
+                        <div class="img_box">
+                            <img src="./images/main_best014.png" alt="">
+                        </div>
+                        <strong>더 세련되게</strong>
+                        <p class="desc">멀티 프로 오븐 : 열선의 차이가 곧 베이킹의 차이.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <button class="prev">
+                    <img src="./images/arrow-left.svg" alt="">
+                </button>
+                <button class="next">
+                    <img src="./images/arrow-right.svg" alt="">
+                </button>
+            </div>
+        </section>
+        <section class="main_content default">
+            <div class="title">
+                <h2>SMEG News</h2>
+                <p>스메그의 다양한 소식을 알려드립니다.</p>
+            </div>
+            <div class="inner">
+                <div class="tab_menu">
+                    <button class="on">오븐요리</button>
+                    <button>SNS사진</button>
+                </div>
+                <div class="tab_content">
+                    <div class="con on">
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_best021.png" alt="">
+                            </div>
+                            <p>오븐요리01</p>
+                            <div class="price">
+                                <!-- <p class="desc">열선의 차이가 곧 베이킹의 차이.</p> -->
+                            </div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_best022.png" alt="">
+                            </div>
+                            <p>오븐요리02</p>
+                            <!-- <p class="desc">열선의 차이가 곧 베이킹의 차이.</p> -->
+                        </div>
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_best023.png" alt="">
+                            </div>
+                            <p>오븐요리03</p>
+                            <!-- <p class="desc">열선의 차이가 곧 베이킹의 차이.</p> -->
+                        </div>
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_best024.png" alt="">
+                            </div>
+                            <p>오븐요리04</p>
+                            <!-- <p class="desc">열선의 차이가 곧 베이킹의 차이.</p> -->
+                        </div>
+                    </div>
+                    <div class="con">
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_best031.png" alt="">
+                            </div>
+                            <p>SNS01</p>
+                            <!-- <p class="desc">열선의 차이가 곧 베이킹의 차이.</p> -->
+                        </div>
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_best032.png" alt="">
+                            </div>
+                            <p>SNS02</p>
+                            <!-- <p class="desc">열선의 차이가 곧 베이킹의 차이.</p> -->
+                        </div>
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_best033.png" alt="">
+                            </div>
+                            <p>SNS03</p>
+                            <!-- <p class="desc">열선의 차이가 곧 베이킹의 차이.</p> -->
+                        </div>
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_best034.png" alt="">
+                            </div>
+                            <p>SNS04</p>
+                            <!-- <p class="desc">열선의 차이가 곧 베이킹의 차이.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="inner">
+            <div class="sns">
+                <a href="" target="_blank">
+                    <img src="./images/instagram.svg" alt="">
+                </a>
+                <a href="" target="_blank">
+                    <img src="./images/facebook.svg" alt="">
+                </a>
+            </div>
+            <ul class="customer">
+                <li><a href="">서비스이용약관</a></li>
+                <li><a href="" style="font-weight: 700;">개인정보처리방침</a></li>
+                <li><a href="">제휴/대량구매</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">이메일주소무단수집거부</a></li>
+                <li><a href="">스메그매장안내</a></li>
+            </ul>
+            <p class="tel">Copyright Ⓒ SMEGKOREA Co., Ltd. All Right Reserved.</p>
+            <address>(주)제이컬렉션:서울특별시 강남구 봉은사로 103길 5, 3층(삼성동, 성재빌딩)</address>
+
+        </div>
+    </footer>
+
+    <span class="to_top">
+        <button>
+            <img src="./images/arrow-up.svg" alt="">
+        </button>
+    </span>
+
+
+
+</body>
+
+</html>
